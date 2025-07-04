@@ -1,0 +1,7 @@
+\c live023
+ALTER TABLE customers ALTER COLUMN first_name SET DATA TYPE VARCHAR(30);
+ALTER TABLE customers ADD COLUMN age INT SET DEFAULT;
+ALTER TABLE customers RENAME COLUMN age TO birthdate;
+ALTER TABLE customers ALTER COLUMN birthdate SET DEFAULT 0;
+ALTER TABLE customers DROP COLUMN birthdate;
+ALTER TABLE customers ADD COLUMN age INT DEFAULT 0;
